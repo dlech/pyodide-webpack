@@ -48,6 +48,11 @@ module.exports = (env, argv) => {
     module: {
       noParse: /pyodide\.js/,
       rules: [
+        {
+          enforce: 'pre',
+          test: /\.(js|mjs|jsx|ts|tsx|css)$/,
+          loader: require.resolve('source-map-loader'),
+        },
         // Remove pyodide globals. They are not necessary when using pyodide in webpack
         {
           test: /pyodide\/.+\.js$/,
