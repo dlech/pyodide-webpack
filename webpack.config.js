@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           { from: require.resolve("pyodide/distutils.tar"), to: "pyodide/distutils.tar" },
-          { from: require.resolve("pyodide/packages.json"), to: "pyodide/packages.json" },
+          { from: require.resolve("pyodide/repodata.json"), to: "pyodide/repodata.json" },
           { from: require.resolve("pyodide/pyodide_py.tar"), to: "pyodide/pyodide_py.tar" },
           { from: require.resolve("pyodide/pyodide.asm.data"), to: "pyodide/pyodide.asm.data" },
           { from: require.resolve("pyodide/pyodide.asm.js"), to: "pyodide/pyodide.asm.js" },

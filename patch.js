@@ -12,7 +12,6 @@ packageJson.exports = {
   "./pyodide.asm.js": "./pyodide.asm.js",
   "./pyodide.asm.data": "./pyodide.asm.data",
   "./pyodide_py.tar": "./pyodide_py.tar",
-  "./packages.json": "./packages.json",
   ...packageJson.exports,
 };
 fs.writeFileSync(packagePath, JSON.stringify(packageJson));
